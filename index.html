@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="time">
+        <button class="btn-quantity" type="button" data-value="60">
+          <span class="quantity__time">01</span> : 00
+        </button>
+        <button class="btn-quantity" type="button" data-value="120">
+          <span class="quantity__time">02</span> : 00
+        </button>
+        <button class="btn-quantity active" type="button" data-value="300">
+          <span class="quantity__time">05</span> : 00
+        </button>
+      </div>
+
+      <div class="timer">
+        <div class="timer__wrap">
+          <span class="numbers timer__minute-dozens">0</span>
+        </div>
+        <div class="timer__wrap">
+          <span class="numbers timer__minute-units">5</span>
+        </div>
+        :
+        <div class="timer__wrap">
+          <span class="numbers timer__second-dozens">0</span>
+        </div>
+        <div class="timer__wrap">
+          <span class="numbers timer__second-units">0</span>
+        </div>
+      </div>
+      <div class="buttnos">
+        <button class="btn btn-start" type="button">Start</button>
+        <button class="btn btn-stop" type="button">Stop</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
