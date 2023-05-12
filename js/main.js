@@ -55,13 +55,15 @@ const abs = function (btn) {
 
 btnsTime.forEach((btn) => {
   btn.addEventListener("click", function (e) {
-    btnsTime.forEach((btn) => {
-      btn.classList.remove("active");
-    });
+    if (!timerActive) {
+      btnsTime.forEach((btn) => {
+        btn.classList.remove("active");
+      });
 
-    e.currentTarget.classList.add("active");
-    timer = e.currentTarget.dataset.value;
-    abs(btn);
+      e.currentTarget.classList.add("active");
+      timer = e.currentTarget.dataset.value;
+      abs(btn);
+    }
   });
 });
 
